@@ -23,7 +23,7 @@ $config->setProxyNamespace('EntityProxy');
 $config->setAutoGenerateProxyClasses(true);
  
 //Para que pueda interpretar las anotaciones en todas las clases contenidas en carpeta /library/Entity...
-AnnotationRegistry::registerFile(__DIR__ . '/library/doctrine-orm/lib/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php');
+AnnotationRegistry::registerFile(__DIR__ . '/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php');
 $driver = new Doctrine\ORM\Mapping\Driver\AnnotationDriver(
     new Doctrine\Common\Annotations\AnnotationReader(),
     array(__DIR__ . '/library/Entity')

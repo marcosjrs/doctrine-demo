@@ -25,3 +25,7 @@ touch bootstrap.php
 
 //finalmente le cambié el dueño a lo creado con sudo:
 sudo chown mjrs:mjrs *
+
+
+//Ejecutamos
+php doctrine-cli.php orm:schema-tool:create
