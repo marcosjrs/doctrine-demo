@@ -1,4 +1,4 @@
-<?php17
+<?php
 //examples/3.php -- Ejemplo de edición de un registro de la tabla
 require_once __DIR__ . '/../bootstrap.php';
  
