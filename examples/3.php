@@ -2,7 +2,7 @@
 //examples/3.php -- Ejemplo de edición de un registro de la tabla
 require_once __DIR__ . '/../bootstrap.php';
  
-//Finding Greeting with id = 1
+//Buscamos el Greeting con id = 1
 $greeting = $em->find('Entity\Greeting', 1);
  
 if($greeting) {
