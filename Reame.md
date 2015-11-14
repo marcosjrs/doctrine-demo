@@ -3,8 +3,8 @@ http://marco-pivetta.com/doctrine2-orm-tutorial/
 
 Ejecutamos en consola, linea a linea:
 
-//Cremos nombre de carpeta, nos metemos dentro y creamos carpeta library y en ella Entity 
-// y EntityProxy en la que damos modo escritura (por temas de permisos)
+//Creamos la estructura de carpetas library/EntityProxy
+// y a esta última damos modo escritura (por temas de permisos)
 mkdir doctrine-demo
 cd doctrine-demo
 mkdir library
@@ -26,6 +26,7 @@ touch bootstrap.php
 //finalmente le cambié el dueño a lo creado con sudo:
 sudo chown mjrs:mjrs *
 
+//Modificamos las entidades correpondientes, para luego crear la BBDD según estas entidades (Greeting.php y los que necesitemos).
 
-//Ejecutamos
+//Ejecutamos el orm:schema-tool:create para crear la base de datos sqlite con toda la estructura.
 php doctrine-cli.php orm:schema-tool:create
